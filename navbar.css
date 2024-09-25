@@ -1,0 +1,126 @@
+# css for navbar
+
+/* Navbar custom styling */
+.navbar-custom {
+  height: 70px;
+  padding: 0 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+  height: 50px;
+  max-height: 50px;
+}
+
+/* Navbar links */
+.nav-link-custom {
+  font-family: 'Poppins', sans-serif;
+  color: #204090;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.nav-link-custom:hover {
+  color: #204090;
+  background-color: #fff;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Offcanvas custom styling */
+.offcanvas-custom {
+  width: 70%;
+}
+
+/* Ensure proper layout for medium screens */
+@media (max-width: 992px) {
+  .navbar-custom {
+    padding: 5px 15px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 45px;
+    max-height: 45px;
+  }
+
+  .navbar-toggle {
+    margin-left: auto;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .navbar-custom {
+    padding: 5px 15px;
+    height: auto;
+
+  }
+
+  .logo {
+    height: 45px;
+    max-height: 45px;
+  }
+
+  .navbar-toggle {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .navbar-custom {
+    padding: 5px 15px;
+    height: auto;
+
+  }
+
+  .logo {
+    height: 45px;
+    max-height: 45px;
+  }
+
+  .navbar-toggle {
+    margin-left: auto;
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar-custom {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 40px;
+    max-height: 40px;
+  }
+
+  .navbar-toggle {
+    margin-left: auto;
+  }
+
+  .offcanvas-custom {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    height: 35px;
+    max-height: 35px;
+  }
+
+  .offcanvas-custom {
+    width: 85%;
+  }
+}
